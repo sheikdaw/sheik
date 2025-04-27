@@ -26,10 +26,11 @@ function Home() {
         <body className="home-preview" /> {/* Optional: this just sets the class on <body> */}
       </Helmet>
 
-      <div className="home-preview"> {/* Moved class here instead of using <body> */}
+      <div className="home-preview"> {/* Mo ved class here instead of using <body> */}
         <Loader />
         <div className="smooth-scroll-content" id="scrollsmoother-container">
           <Navbar />
+          <></>
           <Header />
           <main>
             <Demos />
