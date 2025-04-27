@@ -23,8 +23,10 @@ function Home() {
         />
         <script src="/common/assets/js/common_js.js"></script>
         <script src="/home_preview/assets/js/home_preview_scripts.js"></script>
+        <body className="home-preview" /> {/* Optional: this just sets the class on <body> */}
       </Helmet>
-      <body className="home-preview">
+
+      <div className="home-preview"> {/* Moved class here instead of using <body> */}
         <Loader />
         <div className="smooth-scroll-content" id="scrollsmoother-container">
           <Navbar />
@@ -40,7 +42,7 @@ function Home() {
             <DarkSection2 />
           </main>
         </div>
-      </body>
+      </div>
     </>
   );
 }
